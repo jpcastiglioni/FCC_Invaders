@@ -31,7 +31,7 @@
   <script>
 
 kaboom({
-  ...{"fullscreen":false,"width":500,"height":200,"scale":1,"startScene":"main","version":"0.5.0","clearColor":[0,0,0,1]},
+  ...{"fullscreen":true,"width":500,"height":200,"scale":1,"startScene":"main","version":"0.5.0","clearColor":[0,0,0,1]},
   global: true,
   plugins: [ peditPlugin, asepritePlugin, kbmspritePlugin ],
 });
@@ -133,7 +133,7 @@ collides('bullet', 'space-invader', (b,s) => {
 
 const score = add([
   text('0'),
-  pos(40, 0),
+  pos(40, 5),
   layer('ui'),
   scale(3),
   {
